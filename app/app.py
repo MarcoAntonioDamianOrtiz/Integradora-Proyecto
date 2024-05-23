@@ -18,6 +18,10 @@ def layout():
 def dasboard():
     return render_template('dasboard.html')
 
+@app.route("/dashboard/Usuarios")
+def Usuarios():
+    return render_template('Usuarios.html')
+
 def pagina_no_encontrada(error):
     return render_template('404.html'), 404
 
